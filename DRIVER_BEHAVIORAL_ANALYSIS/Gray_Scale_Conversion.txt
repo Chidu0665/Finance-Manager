@@ -1,0 +1,21 @@
+import os
+import numpy as np
+from PIL import Image
+from numpy import *
+
+img_rows, img_cols = 200, 200
+
+path1 = 'H:/Project/Data set/Talking_in_Phone_Right'  # path of folder of images
+path2 = 'H:/google/Data set/Talking_in_Phone_Right'  # path of folder to save images
+
+listing = os.listdir(path1)
+num_samples = size(listing)
+print(num_samples)
+
+for file in listing:
+    im = Image.open(path1 + '/' + file)
+    img = im.resize((img_rows, img_cols))
+
+    gray = img.convert('L')
+    # need to do some more processing here
+    gray.save(path2 + '/' + file, "JPEG")

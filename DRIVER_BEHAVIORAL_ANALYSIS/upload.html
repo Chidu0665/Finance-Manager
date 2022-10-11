@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+ 
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+
+
+
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css"
+
+        rel="stylesheet" type="text/css" /> 
+
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> 
+
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script> 
+
+    <meta charset=utf-8 />
+
+ 
+<style>
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid red; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+body {
+  background-color: lightgrey;
+}
+</style>
+</head> 
+
+<body>
+    <script src="{{ url_for('static', filename='upload.js') }}"></script> 
+
+ 
+
+    <form action="http://192.168.1.7:5000/uploader" method="POST" enctype="multipart/form-data"> 
+
+            
+
+
+
+
+<h2 class="center1">Driver Behavioral Analysis Using CNN</h2>
+<p style="font-family:sans-serif"><b>By: </b></p>
+<p style="font-family:sans-serif" ><b>Abhay Subramanian K (1DT16CS002) </b></p>
+<p style="font-family:sans-serif"><b>Ankush M (1DT16CS011) </b></p>
+<p style="font-family:sans-serif"><b>Chidambar P Bangre (1DT16CS023) </b> </p>
+<p style="font-family:sans-serif"><b>Chouthik M Shetty (1DT16CS025) </b></p>
+<br>
+<div class="container">
+  <div class="center">
+<form action="http://192.168.1.7:5000/uploader" method="POST" enctype="multipart/form-data"> 
+   <button type="submit" class="btn btn-success">Get Your Prediction here..</button> 
+  </div>
+</div>
+
+
+
+
+  
+
+</form> 
+</body>
+</html>
+
+
+  
+
